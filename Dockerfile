@@ -22,5 +22,7 @@ ENV KEY="255d861b-5ea1-5996-9aa3-922530ec40b1" \
 # Expose port 8055 (if necessary, Directus should already expose this port in its Docker image)
 EXPOSE 8055
 
+USER 10014 
+
 # Define the command to run Directus
 CMD ["node", "app.js"]
